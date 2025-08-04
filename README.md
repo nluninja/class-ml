@@ -2,6 +2,10 @@
 
 This project contains a Jupyter notebook for machine learning classification of clinical diagnosis data, specifically focused on differentiating between syndrome patients and control subjects.
 
+## Academic Context
+
+This work represents thesis research developed by **Giovanni Camminiti** under the supervision of **Professor Andrea Belli** at **Università Cattolica del Sacro Cuore**. The project demonstrates the application of advanced machine learning techniques to clinical diagnosis classification, contributing to the field of medical AI and automated diagnostic systems.
+
 ## Dataset Overview
 
 The notebook analyzes a clinical dataset (`dataset.xlsx`) with:
