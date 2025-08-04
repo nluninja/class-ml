@@ -4,7 +4,7 @@ This project contains a Jupyter notebook for machine learning classification of 
 
 ## Academic Context
 
-This work represents thesis research developed by **GG** under the supervision of **Professor Andrea Belli** at **Università Cattolica del Sacro Cuore**. The project demonstrates the application of advanced machine learning techniques to clinical diagnosis classification, contributing to the field of medical AI and automated diagnostic systems.
+This work represents thesis research developed by **Giovanni Camminiti** under the supervision of **Professor Andrea Belli** at **Università Cattolica del Sacro Cuore**. The project demonstrates the application of advanced machine learning techniques to clinical diagnosis classification, contributing to the field of medical AI and automated diagnostic systems.
 
 ## Dataset Overview
 
