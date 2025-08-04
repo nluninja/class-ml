@@ -22,6 +22,10 @@ The notebook includes comprehensive data validation with 37 conditional rules th
   - `primary_skin_disease___3` 
   - `specify_primary_skin_condi`
 - **Encoding**: Applied OrdinalEncoder for categorical variables
+- **AutoFeat Integration**: Automated feature engineering with polynomial and interaction features
+  - Generates second-order feature combinations
+  - Automatic feature selection based on importance
+  - Discovers non-linear relationships between clinical variables
 
 ## Machine Learning Models
 
@@ -43,6 +47,18 @@ The notebook includes comprehensive data validation with 37 conditional rules th
 - **Cross-validation accuracy**: ~99.6%
 - Uses data imputation (mean) and standardization
 - Includes permutation feature importance analysis
+
+### 4. AutoFeat Enhanced Models
+- **Automated Feature Engineering**: Polynomial and interaction features generated automatically
+- **Feature Expansion**: Creates second-order combinations of original clinical features
+- **Performance Comparison**: Evaluates improvement over baseline models
+- **Smart Selection**: Automatically selects most predictive engineered features
+
+### 5. Ensemble Model (Voting Classifier)
+- **Model Combination**: Combines Random Forest and CatBoost predictions
+- **Voting Methods**: Both hard voting (majority) and soft voting (probability averaging)
+- **Robust Predictions**: Leverages strengths of different algorithms
+- **Disagreement Analysis**: Identifies cases where individual models disagree
 
 ## Key Features
 
@@ -68,12 +84,18 @@ The notebook includes comprehensive data validation with 37 conditional rules th
 | Random Forest | 95.6% | 95.7% | Robust, interpretable |
 | CatBoost | 99.6% | 99.1% | Best performance, handles categoricals |
 | FFNN | 99.6% | - | Deep learning approach, regularized |
+| AutoFeat + RF | TBD | TBD | Automated feature engineering, discovers interactions |
+| Ensemble (RF+CB) | TBD | TBD | Combines best models, robust predictions |
 
 ## Usage
 
 1. Load the dataset: `dataset.xlsx`
 2. Run data validation and preprocessing steps
-3. Choose your preferred model (CatBoost recommended for best performance)
+3. Choose your preferred approach:
+   - **CatBoost**: Best overall performance for original features
+   - **AutoFeat + RF**: Automated feature engineering for potential improvements
+   - **FFNN**: Deep learning with advanced regularization
+   - **Ensemble**: Combines multiple models for robust predictions
 4. Evaluate using cross-validation and test set metrics
 
 ## Dependencies
@@ -82,6 +104,6 @@ The notebook includes comprehensive data validation with 37 conditional rules th
 - scikit-learn
 - catboost
 - tensorflow/keras (for neural network)
-- autofeat (for automated feature engineering)
+- autofeat (for automated feature engineering and polynomial features)
 
 The project demonstrates state-of-the-art performance on clinical diagnosis classification with robust validation and comprehensive feature analysis.
